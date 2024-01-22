@@ -27,7 +27,7 @@ import { images } from "./gulp/tasks/images.js";
 import { otfToTtf, ttfToWoff, fontsStyle } from "./gulp/tasks/fonts.js";
 import { svgSprive } from "./gulp/tasks/svgSprive.js";
 import { zip } from "./gulp/tasks/zip.js";
-// import { ftp } from "./gulp/task/ftp.js"; // uncomment for ftp
+// import { ftp } from "./gulp/tasks/ftp.js"; // uncomment for ftp
 
 // Watcher for changing in the files
 function watcher() {

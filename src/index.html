@@ -4,11 +4,14 @@
 		"title": "Main"
 	})
 <body>
-	@@include('html/header.html',{})
-	<main>
-		Hello!
-	</main>
-	@@include('html/footer.html',{})
+	<div class="wrapper">
+		@@include('html/header.html',{})
+		<main>
+			Hello!
+		</main>
+		@@include('html/footer.html',{})
+	</div>
+
 	<script src="js/app.min.js"></script>
 </body>
 </html>

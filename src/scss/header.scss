@@ -41,9 +41,12 @@
 		gap: 25px;
 	}
 
-	&__item {
-	}
-
 	&__link {
+		padding: 10px;
+		transition: all 0.3s ease 0s;
+		&:hover {
+			color: $mainColor;
+			transition: all 0.3s ease 0s;			
+		}
 	}
 }

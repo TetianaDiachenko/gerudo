@@ -25,28 +25,29 @@
 			padding-left: 17px;
 		}
 	}
-
 	&__menu {
 		flex: 1 auto;
 	}
 }
-.menu {
-	display: flex;
-	justify-content: flex-end;
-	@include adaptiv-font(20, 18);
-	font-weight: 500;
 
-	&__list {
+@media (min-width: 767px) {
+	.menu {
 		display: flex;
-		gap: 25px;
-	}
-
-	&__link {
-		padding: 10px;
-		transition: all 0.3s ease 0s;
-		&:hover {
-			color: $mainColor;
-			transition: all 0.3s ease 0s;			
+		justify-content: flex-end;
+		@include adaptiv-font(20, 18);
+		font-weight: 500;
+		&__list {
+			display: flex;
+			gap: 25px;
 		}
-	}
+		&__link {
+			padding: 10px;
+			transition: all 0.3s ease 0s;
+			&:hover {
+				color: $mainColor;
+				transition: all 0.3s ease 0s;			
+			}
+		}
+	}	
+		
 }

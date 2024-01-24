@@ -1,0 +1,10 @@
+$fontFamily: Ubuntu, sans-serif;
+$fontSize: 18px;
+$fontColor: #171717;
+$mainColor: #FF7062;
+$whiteColor: #FFFFFF;
+
+@mixin container {
+	max-width: 1181px;
+	margin: 0px auto;
+}

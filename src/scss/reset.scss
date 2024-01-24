@@ -7,14 +7,27 @@
 	border: 0;
 	box-sizing: border-box;
 }
-a {
+a, 
+a:hover,
+a:visited  {
 	text-decoration: none;
+}
+:active,
+:focus,
+a:focus,
+a:active {
+	outline: none;
+}
+a:hover,
+button {
+	cursor: pointer;
 }
 ul,
 ol,
 li {
 	list-style: none;
 }
+
 img {
 	vertical-align: top;
 }
@@ -26,6 +39,11 @@ h5,
 h6 {
 	font-weight: inherit;
 	font-size: inherit;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
 }
 html,
 body {

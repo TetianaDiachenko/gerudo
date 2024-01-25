@@ -47,7 +47,7 @@ export const scss = () => {
 			)	
 		)
 		// uncomment if you need an uncompressed duplicate of the styles file
-		// .pipe(app.gulp.dest(app.path.build.css))
+		.pipe(app.gulp.dest(app.path.build.css))
 		.pipe(
 			app.plugins.if(
 				app.isBuild,

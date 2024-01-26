@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-	@@include('html/head.html',{
-		"title": "Main"
-	})
+@@include('html/head.html',{
+"title": "Main"
+})
+
 <body>
 	<div class="wrapper">
 		@@include('html/header.html',{})
 		<main>
-			Hello!
+			@@include('html/home.html', {})
+			<section></section>
+			<section></section>
+			<section></section>
+			<section></section>
+			<section></section>
+			<section></section>
+			<section></section>
+			<section></section>
 		</main>
 		@@include('html/footer.html',{})
 	</div>
 
 	<script src="js/app.min.js"></script>
 </body>
+
 </html>

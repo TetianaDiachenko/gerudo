@@ -22,3 +22,24 @@ $maxWidth: 1181px;
 		font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
 	}
 }
+
+@mixin button($btnHeight, $btnPadLeft, $btnPadRight, $btnFontSize) {	
+	color: $whiteColor;
+	background: $mainColor;
+	border-radius: 40px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: $btnHeight;
+	padding-left: $btnPadLeft;
+	padding-right: $btnPadRight;
+	font-size: $btnFontSize;
+	font-weight: 500;
+	transition: all 0.3s ease 0s;
+		&:hover {
+			color: $mainColor;
+			background: rgba($color: $whiteColor, $alpha: 0.8);
+			border: 3px solid $mainColor;
+		}
+}

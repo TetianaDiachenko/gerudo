@@ -10,6 +10,7 @@ $maxWidth: 1181px;
 @mixin container {
 	max-width: $maxWidth;
 	margin: 0px auto;
+	padding: 0px 15px;
 }
 
 @mixin adaptiv-font($pcSize, $mobSize) {

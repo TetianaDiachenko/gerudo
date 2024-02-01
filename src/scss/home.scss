@@ -6,7 +6,6 @@
 	position: relative;
 	@media (max-width: 767px) {
 		text-align: center;
-
 	}
 	
 	&::before {
@@ -64,9 +63,9 @@
 	}
 
 	&__button {
-		@include button(81px, 78px, 77px, 30px);
+		@include button(81px, 77px, 30px);
 		@media (max-width: 767px) {
-			@include button(60px, 45px, 45px, 20px);
+			@include button(60px, 45px, 20px);
 		}		
 	}
 }

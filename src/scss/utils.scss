@@ -14,7 +14,7 @@ $maxWidth: 1181px;
 }
 
 
-@mixin button($btnHeight, $btnPadLeft, $btnPadRight, $btnFontSize) {	
+@mixin button($btnHeight, $btnPad, $btnFontSize) {	
 	color: $whiteColor;
 	background: $mainColor;
 	border-radius: 40px;
@@ -23,8 +23,7 @@ $maxWidth: 1181px;
 	justify-content: center;
 	text-align: center;
 	height: $btnHeight;
-	padding-left: $btnPadLeft;
-	padding-right: $btnPadRight;
+	padding: 0 $btnPad;
 	font-size: $btnFontSize;
 	font-weight: 500;
 	transition: all 0.3s ease 0s;

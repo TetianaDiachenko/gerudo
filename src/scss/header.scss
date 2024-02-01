@@ -15,7 +15,7 @@
 	&__logo {
 		display: flex;
 		align-items: center;
-		@include adaptiv-font(24, 20);
+		font-size: 24px;
 		z-index: 5;
 		&-img {
 			padding-left: 5px;
@@ -31,12 +31,11 @@
 	}
 }
 
-
 @media (min-width: 767px) {
 	.menu {
 		display: flex;
 		justify-content: flex-end;
-		@include adaptiv-font(20, 18);
+		font-size: 20px;
 		font-weight: 500;
 		&__list {
 			display: flex;
@@ -56,9 +55,9 @@
 		&__icon {
 			display: none;
 		}
-	}	
-		
+	}			
 }
+
 @media (max-width: 767px) {
 	.menu__body {
 		display: flex;
@@ -125,7 +124,4 @@
 			transform: rotate(45deg) translate(0px, -50%);
 		}
 	}
-	// .header__logo {
-	// 	z-index: 5;
-	// }
 }

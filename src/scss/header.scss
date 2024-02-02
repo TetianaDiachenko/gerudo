@@ -1,15 +1,24 @@
 .header {
 	color: #FFFFFF;
-	position: absolute;
+	min-height: 114px;
+	position: fixed;
 	width: 100%;
 	top: 0;
 	left: 0;
 	z-index: 50;
+	transition: all 0.3s ease-in-out;
+	&.scrolled {
+		min-height: 8%;
+		background-color: $mainColor;
+		opacity: 0.98;
+		box-shadow: 0 6px 6px -6px #222;
+	}
 	&__container {
 		display: flex;
-		min-height: 114px;
 		align-items: center;
+		min-height: inherit;
 		@include container;
+		padding: 10px 15px 0px;
 	}
 
 	&__logo {

@@ -1,12 +1,15 @@
 .home {
 	color: $whiteColor;
-	height: 100vh;
+	height: 100%;
 	background: url('@img/screen1.png') 0 0 no-repeat;
 	background-size: cover;
 	position: relative;
 	text-align: center;	
 	@media (min-width: 768px) {
 		text-align: start;
+	}
+	@media (min-width: 1300px) {
+		height: 100%;
 	}
 	
 	&::before {
@@ -36,6 +39,9 @@
 			font-size: 50px;
 		}
 		@media (min-width: 1200px) {
+			padding-top: 200px;
+		}
+		@media (min-width: 1300px) {
 			padding-top: 267px;
 		}
 	}

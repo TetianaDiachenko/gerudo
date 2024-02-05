@@ -1,11 +1,11 @@
 .services {
 	background-color: $bgColor;
 	position: relative;
-
 	@media (min-width: 768px) {
-		padding: 40px 0px;
+		padding: 20px 0px;
 	}
-	@media (min-width: 992px) {		
+	@media (min-width: 992px) {
+		padding: 40px 0px;		
 		&::before {
 			@include lineLeft(159px);
 		}	
@@ -21,41 +21,78 @@
 	}
 	&__header {
 		text-align: center;
+		margin-top: 10px;
+		margin-bottom: 30px;
+		@media (min-width: 768px) {
+			margin-top: 0px;
+			margin-bottom: 50px;		
+		}
+		@media (min-width: 992px) {
+			margin-bottom: 100px;
+		}
 	}
-
-	&__header-title {
-	}
-
 	&__blocks {
-	}
-}
-
-.sevices {
-
-	&__block {
-	}
-}
-.sevice {
-
-	&__title {
+		display: flex;
+		justify-content: center;
 	}
 }
 .service {
-
+	max-width: 570px;
+	&__title {
+		font-size: 20px;
+		color: $whiteColor;
+		background-color: $mainColor;
+		text-align: center;
+		// margin-bottom: 30px;
+		line-height: 1.5;
+		padding: 25px 10px;
+		@media (min-width: 768px) {
+			font-size: 30px;
+		}
+		&-text {
+			font-size: 18px;
+			font-weight: 300;
+			@media (min-width: 768px) {
+				font-size: 22px;
+			}
+		}
+	}
 	&__body {
+		display: flex;
+		flex-direction: column;
+		padding: 20px 25px;
+		min-height: 480px;
+		width: 100%;
+		overflow: hidden;
+		@media (min-width: 768px) {
+			padding: 35px 45px;
+		}
 	}
-
-	&__body-text1 {
-	}
-
 	&__body-text2 {
+		background-color: #FFF4F2;
+		padding: 10px;
+		margin: 25px 0px;
 	}
-
-	&__body-text3 {
-	}
-
 	&__body-button {
+		display: flex;
+		flex: 1 1 auto;
+		align-items: flex-end;
+		justify-content: center;
 	}
 }
-.button {
+.text {
+	color: $fontColor;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.4;
+	&__list {
+		color: $mainColor;
+		list-style: inside;
+	}
+}
+.colored {
+	color: $mainColor;
+}
+.black {
+	color: $fontColor;
 }

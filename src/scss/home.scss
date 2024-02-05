@@ -1,13 +1,12 @@
 .home {
 	color: $whiteColor;
-	height: 100vh;
+	height: 100%;
 	background: url('@img/screen1.png') 0 0 no-repeat;
 	background-size: cover;
 	position: relative;
 	text-align: center;	
 	@media (min-width: 768px) {
 		text-align: start;
-		height: 100%;
 	}
 
 	

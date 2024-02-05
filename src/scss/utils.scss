@@ -41,9 +41,31 @@ $maxWidth: 1181px;
    font-weight: 700;
    display: inline-block;
    text-transform: uppercase;
-   padding: 40px 60px;
-   border-bottom: 8px solid $mainColor;
+	padding: 20px 30px;
+   border-bottom: 3px solid $mainColor;
    @media (min-width: 768px) {
       font-size: 36px;
+		padding: 40px 60px;
+		border-bottom: 8px solid $mainColor;
    }
+ }
+
+ @mixin lineLeft($lineTop) {
+	content: "";
+	position: absolute;
+	top: $lineTop;
+	left: 0px;
+	height: 3px;
+	width: 45%;
+	background-color: $mainColor;
+ }
+
+ @mixin lineRight($lineTop) {	
+	content: "";
+	position: absolute;
+	top: $lineTop;
+	right: 0px;
+	height: 3px;
+	width: 45%;
+	background-color: $mainColor;
  }

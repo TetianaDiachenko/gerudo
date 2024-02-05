@@ -1,0 +1,51 @@
+.services {
+	background-color: $bgColor;
+	@media (min-width: 768px) {
+		padding: 40px 0px;
+	}
+	@media (min-width: 1200px) {
+		padding: 80px 0px;
+	}
+	&__container {
+		@include container;
+	}
+	&__header {
+		text-align: center;
+	}
+
+	&__header-title {
+	}
+
+	&__blocks {
+	}
+}
+
+.sevices {
+
+	&__block {
+	}
+}
+.sevice {
+
+	&__title {
+	}
+}
+.service {
+
+	&__body {
+	}
+
+	&__body-text1 {
+	}
+
+	&__body-text2 {
+	}
+
+	&__body-text3 {
+	}
+
+	&__body-button {
+	}
+}
+.button {
+}

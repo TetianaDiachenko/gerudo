@@ -36,6 +36,7 @@ function watcher() {
 	gulp.watch(path.watch.scss, scss);
 	gulp.watch(path.watch.js, js);
 	gulp.watch(path.watch.images, images);
+	gulp.watch(path.watch.src, svgicons);
 }
 
 export { svgSprive } 
@@ -44,7 +45,7 @@ export { svgSprive }
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
 
 // Main tasks
-const mainTasks = gulp.series( fonts, gulp.parallel(copy, html, scss, js, images));
+const mainTasks = gulp.series( fonts, gulp.parallel(copy, html, scss, js, images, svgSprive));
 
 // Building scenarios
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));

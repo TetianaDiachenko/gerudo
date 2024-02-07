@@ -1,0 +1,75 @@
+.efficiencies {
+	background: url('@img/methods.png') 0 0 no-repeat;
+	position: relative;
+	padding-bottom: 10px;
+	@media (min-width: 768px) {
+		padding-bottom: 30px;
+	}
+	@media (min-width: 992px) {	
+		padding-bottom: 60px;
+		&::before {
+			@include lineRight(119px);
+		}
+	}
+	&__container {
+		@include container;
+	}
+	&__header {
+		text-align: center;
+		margin-bottom: 30px;
+		@media (min-width: 768px) {
+			margin-top: 0px;
+			margin-bottom: 50px;	
+		}
+		@media (min-width: 992px) {
+			margin-bottom: 80px;
+		}
+	}
+	&__blocks {
+		font-size: 18px;
+		font-weight: 400;
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		@media (min-width: 768px) {
+			font-size: 20px;
+			justify-content: space-between;
+		}
+
+	}
+
+	// &__block {
+
+	// }
+
+	&__bottom {
+		text-align: center;
+		margin: 40px 10px;
+	}
+
+	&__bottom-button {
+		@include button(60px, 35px, 20px);
+		@media (min-width: 768px) {
+			@include button(85px, 48px, 28px);
+		}		
+	}
+}
+.efficiency {
+	width: 70%;
+	padding: 20px;
+	line-height: 1.4;
+	@media (min-width: 768px) {
+		width: 50%;
+	}
+	@media (min-width: 992px) {
+		width: 25%;	
+	}
+
+	// &__img {
+
+	// }
+
+	// &__block {
+	// }
+}

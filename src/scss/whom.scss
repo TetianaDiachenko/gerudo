@@ -1,0 +1,129 @@
+.whom {
+	background-color: $whiteColor;
+	position: relative;
+	padding: 10px 0px;
+	@media (min-width: 768px) {
+		padding: 20px 0px;
+	}
+	@media (min-width: 992px) {
+	padding: 40px 0px;
+		&::before {
+			@include lineLeft(159px);
+		}
+	}
+	@media (min-width: 1300px) {
+		padding: 80px 0px;
+		&::before {
+			top: 199px;
+		}
+	}
+	&__container {
+		@include container;
+	}
+
+	&__header {
+		text-align: center;
+	}
+
+	&__header-title {
+		
+	}
+
+	&__if {
+		font-size: 25px;
+		font-weight: 300;
+		text-align: center;
+		padding: 30px 0px 10px ;
+		@media (min-width: 768px) {
+			font-size: 36px;
+			padding: 40px 0px 10px ;
+		}
+		@media (min-width: 992px) {		
+			padding: 60px 0px 10px ;
+			}
+	}
+
+	&__descriptions {
+		color: $titleColor;
+		font-size: 18px;
+		font-weight: 400;	
+		line-height: 1.3;
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: center;
+		padding-top: 20px;
+		position: relative;
+      @media (min-width: 480px) {
+         justify-content: space-between;
+			line-height: 1.5;
+			&::before {
+				content: "";
+				display: block;
+				width: 80px;
+				height: 80px;
+				background-color: $mainColor;
+				position: absolute;
+				top: 28%;
+				right: 42%;	
+				@media (min-width: 640px) {
+					width: 104px;
+					height: 104px;
+					top: 25%;	
+				}		
+				@media (min-width: 768px) {
+					top: 28%;
+					right: 44%;	
+				}					
+				@media (min-width: 992px) {
+					top: 41%;
+					right: 62%;	
+				}
+				
+			}
+			&::after {
+				content: "";
+				display: block;
+				width: 80px;
+				height: 80px;
+				background-color: $mainColor;
+				position: absolute;
+				top: 60%;
+				right: 42%;
+				@media (min-width: 640px) {
+					width: 104px;
+					height: 104px;
+				}		
+				@media (min-width: 768px) {
+					right: 44%;	
+				}					
+				@media (min-width: 992px) {
+					top: 41%;
+					right: 28%;	
+				}
+			}
+      }
+	}
+
+   &__descriptions-item {
+      background-color: #F7F7F7;
+      width: 100%;
+		height: 170px;
+      margin-bottom: 27px;
+      padding: 0px 40px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+      @media (min-width: 480px) {
+         width: 48%;
+			height: 200px;
+      }
+		@media (min-width: 768px) {
+			height: 260px;
+		}
+      @media (min-width: 992px) {
+         width: 32%; 
+      }
+   }
+}
+

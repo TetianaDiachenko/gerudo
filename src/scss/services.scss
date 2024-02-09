@@ -52,10 +52,8 @@
 		max-width: 570px;
 	}
 	@media (min-width: 992px) {
-		width: 49%;
-		
+		width: 49%;		
 	}
-
 	&__title {
 		font-size: 20px;
 		color: $whiteColor;
@@ -109,10 +107,6 @@
 		color: $mainColor;
 		list-style: inside;
 	}
-}
-.colored {
-	color: $mainColor;
-	font-weight: 500;
 }
 .black {
 	color: $fontColor;

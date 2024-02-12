@@ -1,0 +1,135 @@
+.how {
+	background: linear-gradient(to bottom right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5)), url("@img/howIwork.jpg") 0 0 no-repeat;
+	background-size: cover;
+	position: relative;
+	@media (min-width: 768px) {
+		margin-top: 20px;
+	}
+	@media (min-width: 992px) {
+		margin-top: 40px;		
+		&::before {
+			@include lineRight(119px);
+		}	
+	}
+	&__container {
+		@include container;
+	}
+	&__header {
+		text-align: center;
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 40px;
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 1.2;
+		@media (min-width: 768px) {
+			flex-direction: row;
+			padding: 40px 0px 40px 40px;
+		}
+		@media (min-width: 992px) {
+			font-size: 20px;
+			padding: 100px 0px 100px 100px;
+		}
+	}
+	&__content-left {
+		width: 100%;
+		margin-bottom: 30px;
+		@media (min-width: 555px) {
+			margin-bottom: 60px;			
+		}
+		@media (min-width: 768px) {
+			width: 50%;
+			margin-bottom: 0px;
+		}
+	}
+	&__content-right {
+		width: 100%;
+		@media (min-width: 768px) {
+			width: 50%;
+			margin-left: 40px;
+		}
+		@media (min-width: 992px) {
+			margin-left: 100px;
+		}
+	}
+	&__content-first {
+		position: relative;    
+		padding: 45px 0px 45px 35px;
+		margin-bottom: 60px;
+		&::before {
+			content: url("@img/1.png");
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		@media (min-width: 555px) {
+			margin-bottom: 100px;			
+		}
+		@media (min-width: 768px) {
+			padding: 45px 35px;
+		}
+		@media (min-width: 992px) { 
+			padding: 60px 47px;
+		}
+	}
+	&__content-second {
+		position: relative;    
+		padding: 10px 0px 10px 35px;
+		&::before {
+			content: url("@img/2.png");
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		@media (min-width: 768px) {
+			padding: 10px 0px 10px 35px;
+		}
+		@media (min-width: 992px) {  
+			padding: 5px 10px 0px 60px;			
+		}
+		@media (min-width: 1200px) {
+			padding: 20px 45px 0px 60px;
+		}
+	}
+	&__content-third {
+		position: relative; 
+		padding: 25px 0px 25px 35px;
+		margin-bottom: 60px;
+		&::before {
+			content: url("@img/3.png");
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		@media (min-width: 555px) {
+			margin-bottom: 110px;			
+		}
+		@media (min-width: 768px) {
+			padding: 25px 0px 25px 49px;
+		}
+		@media (min-width: 992px) {  
+			margin-bottom: 140px;
+		}
+		@media (min-width: 1200px) {
+			margin-bottom: 100px;
+			padding: 45px 65px;		
+		}
+	}
+	&__content-fourth {
+		position: relative;    
+		padding: 65px 0px 65px 35px;
+		&::before {
+			content: url("@img/4.png");
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		@media (min-width: 768px) {
+			padding: 65px 70px;
+		}
+	}
+}
+

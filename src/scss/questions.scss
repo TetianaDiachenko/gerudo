@@ -1,0 +1,47 @@
+.questions {
+   background: url("@img/question.jpg") 0 0 no-repeat;
+	background-size: cover;
+   &__container {
+		@include container;
+		color: $whiteColor;
+		text-align: center;
+		padding: 50px 15px;
+		line-height: 1.4;
+		@media (min-width: 768px) {
+			padding: 40px 15px;
+		}
+   }
+   &__title {
+		font-size: 23px;
+		font-weight: 500;
+		text-transform: uppercase;
+		@media (min-width: 768px) {
+			font-size: 30px;
+		}
+   }
+   &__text {
+		font-size: 20px;
+		font-weight: 300;
+		padding: 20px 0px 40px;
+		@media (min-width: 768px) {
+			padding: 20px 0px 50px;
+		}
+   }
+}
+.social {
+      display: flex;
+		gap: 20px;
+      font-size: 50px;
+      justify-content: center;
+      align-items: center;
+		@media (min-width: 768px) {
+			gap: 30px;
+		}
+   &__item-link {
+      color: $whiteColor;
+      transition: all 0.3s ease-in-out;
+		&:hover {
+			color: $mainColor;
+		}
+   }
+}

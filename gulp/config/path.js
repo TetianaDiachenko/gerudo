@@ -11,6 +11,7 @@ export const path = {
 		html: `${buildFolder}`,
 		images: `${buildFolder}/img/`,
 		fonts: `${buildFolder}/fonts/`,
+		iconsfonts: `${buildFolder}/fonts/iconsfonts/`,
 		files: `${buildFolder}/files/`
 	},
 	src: {
@@ -19,6 +20,7 @@ export const path = {
 		svg: `${srcFolder}/img/**/*.svg`,
 		scss: `${srcFolder}/scss/style.scss`,
 		html: `${srcFolder}/*.html`, //.pug
+		iconsfonts: `${srcFolder}/fonts/iconsfonts/*`,
 		files: `${srcFolder}/files/**/*.*`,
 		svgicons: `${srcFolder}/svgicons/*.svg`,
 	},

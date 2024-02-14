@@ -89,6 +89,13 @@ export const fontsStyle = () => {
 		}
 	});
 
+
+
 	return app.gulp.src(`${app.path.srcFolder}`);
 	function cb() { }
+}
+
+export const iconsFont = () => {	
+	return app.gulp.src(app.path.src.iconsfonts)
+	.pipe(app.gulp.dest(app.path.build.iconsfonts))
 }

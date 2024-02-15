@@ -28,9 +28,6 @@
 	&__content-tel {
 		font-size: 32px;
 		font-weight: 700;
-		@media (min-width: 768px) {
-			// font-size: 32px;
-		}
 		@media (min-width: 992px) {
 			font-size: 64px;
 		}
@@ -50,6 +47,5 @@
 		@media (min-width: 768px) {
 			font-size: 36px;
 		}
-
 	}
 }

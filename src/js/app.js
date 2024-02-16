@@ -28,7 +28,6 @@ if(menuLinks.length > 0) {
 	menuLinks.forEach(menuLink => {
 		menuLink.addEventListener("click", onMenuLinkClick);
 	});
-
 	function onMenuLinkClick(e) {
 		const menuLink = e.target;
 		if(menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
@@ -46,7 +45,27 @@ if(menuLinks.length > 0) {
 				behavior: "smooth"
 			});
 			e.preventDefault();
-		}
+		}	
 	}
 }
 
+//Scroll on click button 
+const buttonLinks = document.querySelectorAll('.button[data-goto]');
+if(buttonLinks.length > 0) {
+	buttonLinks.forEach(buttonLink => {
+		buttonLink.addEventListener("click", onButtonClick);
+	});
+	function onButtonClick(e) {
+		const buttonLink = e.target;
+		if(buttonLink.dataset.goto && document.querySelector(buttonLink.dataset.goto)) {
+			const gotoBlock = document.querySelector(buttonLink.dataset.goto);
+			const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY - header.offsetHeight;
+
+			window.scrollTo({
+				top: gotoBlockValue,
+				behavior: "smooth"
+			});
+			e.preventDefault();
+		}	
+	}
+}

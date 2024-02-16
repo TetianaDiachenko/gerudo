@@ -104,9 +104,12 @@
 	&__items {
 		width: 100%;
 		border: 10px solid white;
-	}
-	&__items-img {
-		width: 100%;
+		&-link {
+			width: 100%;
+			&-img {
+				width: 100%;				
+			}
+		}
 	}
 }
 

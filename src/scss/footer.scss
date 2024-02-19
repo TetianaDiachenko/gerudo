@@ -1,0 +1,130 @@
+.footer {
+   background: url("@img/footer.jpg") 0 0 no-repeat;
+	background-size: cover;
+	color: $whiteColor;
+	&__container {
+		@include container;
+	}
+	&__main {
+		padding: 30px 0px 0px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		@media (min-width: 768px) {
+			flex-direction: row;
+			padding: 50px 0px;
+		}
+	}
+	&__menu {
+		order: 2;
+		text-align: center;
+		@media (min-width: 768px) {
+			order: 0;
+			text-align: start;
+		}
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 0px;
+		@media (min-width: 480px) {
+			flex-direction: row;
+			gap: 30px;
+		}
+		@media (min-width: 768px) {
+			flex-direction: column;
+			gap: 0px;
+			align-items: flex-start;
+		}
+	}
+	&__list-item {
+		padding-bottom: 30px;
+		font-size: 22px;
+		font-weight: 400;
+		transition: all 0.3s ease-in-out;
+		&:hover {
+			text-decoration: underline;
+			transition: all 0.1s ease-in-out;
+		}
+	}
+	&__menu-link {
+		color: $whiteColor;		
+	}
+	&__info {
+		order: 0;	
+		text-align: center;
+		margin: 0px 15px;
+		@media (min-width: 768px) {
+			order: 1;
+		}
+	}
+	&__logo-name {
+		font-size: 28px;
+		font-weight: 500;
+		padding: 10px 0px 20px;
+		@media (min-width: 768px) {
+			font-size: 34px;
+		}
+	}
+	&__text {
+		font-size: 22px;
+		font-weight: 300;
+		line-height: 1.2;
+	}
+	&__contacts {
+		order: 1;
+		text-align: center;
+		margin: 30px 0px;
+		@media (min-width: 768px) {
+			order: 2;
+			text-align: start;
+			margin: 0px;
+		}
+	}
+	&__contacts-tel-call{
+		color: $whiteColor;
+		font-size: 22px;
+		font-weight: 700;
+		letter-spacing: 1;
+	}
+	&__contacts-gmail {
+		font-size: 22px;
+		font-weight: 300;
+		padding: 30px 0px 35px;
+	}
+	&__contacts-gmail-write {
+		color: $whiteColor;
+	}
+	&__contacts-social {
+		justify-content: center;
+		.social__item-link:hover {
+			color: #FFC6C1;
+		}
+		@media (min-width: 768px) {
+			font-size: 40px;
+			gap: 10px;
+			justify-content: space-between;
+		}
+	}
+}
+.footer__bottom {
+	height: 60px;
+	background-color: #FF7062;
+	&__container {
+		@include container;
+		height: inherit;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&-text {
+		color: #FFC6C1;
+		font-size: 12px;
+		font-weight: 400;
+		@media (min-width: 768px) {
+			padding-right: 100px;
+		}
+	}
+}

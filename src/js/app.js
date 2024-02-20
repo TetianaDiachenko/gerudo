@@ -69,3 +69,33 @@ if(buttonLinks.length > 0) {
 		}	
 	}
 }
+
+//Animated 
+const animItems = document.querySelectorAll('._anim-items');
+
+if (animItems.length > 0) {
+   window.addEventListener('scroll', animOnScroll);
+   function animOnScroll() {
+      for (let index = 0; index < animItems.length; index++) {
+         const animItem = animItems[index];
+         const animItemHeight = animItem.offsetHeight;
+         const animItemOffset = animItem.getBoundingClientRect().top;
+         const animStart = 4;
+
+         let animItemPoint = window.innerHeight - animItemHeight / animStart;
+         if(animItemHeight > window.innerHeight) {
+            animItemPoint = window.innerHeight - window.innerHeight / animStart;
+         }
+         if ((scrollY > (animItemOffset - animItemPoint)) && (scrollY < (animItemOffset + animItemHeight))) {
+            animItem.classList.add('_appear');
+         } else {
+				if (!animItem.classList.contains('_anim-no-hide')) {
+            	animItem.classList.remove('_appear');
+				}
+         }
+      }
+   }
+	setTimeout(() => {
+		animOnScroll();
+	}, 300);   
+}

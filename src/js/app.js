@@ -79,7 +79,7 @@ if (animItems.length > 0) {
       for (let index = 0; index < animItems.length; index++) {
          const animItem = animItems[index];
          const animItemHeight = animItem.offsetHeight;
-         const animItemOffset = animItem.getBoundingClientRect().top;
+         const animItemOffset = offset(animItem).top;
          const animStart = 4;
 
          let animItemPoint = window.innerHeight - animItemHeight / animStart;
@@ -94,6 +94,12 @@ if (animItems.length > 0) {
 				}
          }
       }
+		function offset(el) {
+			var rect = el.getBoundingClientRect(),
+			scrollLeft = window.scrollX || document.documentElement.scrollLeft,
+			scrollTop = window.scrollY || document.documentElement.scrollTop;
+			return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+	  }
    }
 	setTimeout(() => {
 		animOnScroll();

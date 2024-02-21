@@ -1,7 +1,7 @@
 .questions {
    background: url("@img/question.jpg") 0 0 no-repeat  #706969;
 	background-size: cover;
-   &__container {
+   &__container { 
 		@include container;
 		color: $whiteColor;
 		text-align: center;

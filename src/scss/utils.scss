@@ -28,6 +28,7 @@ $maxWidth: 1181px;
 @mixin button($btnHeight, $btnPad, $btnFontSize) {	
 	color: $whiteColor;
 	background: $mainColor;
+	border: 3px solid transparent;
 	border-radius: 40px;
 	display: inline-flex;
 	align-items: center;
@@ -63,7 +64,7 @@ $maxWidth: 1181px;
 	&:hover {
 		color: $whiteColor;
 		background: $mainColor;
-		border: none;
+		border: 3px solid transparent;
 		transition: all 0.3s ease 0s;
 	}
 }

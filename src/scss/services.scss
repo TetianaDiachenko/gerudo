@@ -1,20 +1,29 @@
 .services {
 	background-color: $bgColor;
 	position: relative;
+	transition: all 0.8s ease 0s;
 	@media (min-width: 768px) {
 		padding: 20px 0px;
 	}
 	@media (min-width: 992px) {
-		padding: 40px 0px;		
-		&::before {
-			@include lineLeft(159px);
-		}	
+		padding: 40px 0px;
 	}
 	@media (min-width: 1300px) {
 		padding: 80px 0px;
-		&::before {
-			top: 199px;
+	}
+	._lineL {
+		@media (min-width: 992px) {
+			@include lineLeft(159px);
 		}
+		@media (min-width: 1300px) {
+			top: 199px;
+		}	
+	}
+	&._appear {
+		._lineL {
+         transform: translate(0px, 0px);
+         opacity: 1;
+      }
 	}
 	&__container {
 		@include container;
@@ -23,6 +32,7 @@
 		text-align: center;
 		margin-top: 10px;
 		margin-bottom: 30px;
+		position: relative;
 		@media (min-width: 768px) {
 			margin-top: 0px;
 			margin-bottom: 50px;		
@@ -32,8 +42,8 @@
 		}
 		@media (min-width: 1300px) {
 			margin-bottom: 100px;
+			}
 		}
-	}
 	&__blocks {
 		display: flex;
 		flex-wrap: wrap;

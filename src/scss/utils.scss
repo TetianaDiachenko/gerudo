@@ -87,7 +87,6 @@ $maxWidth: 1181px;
  }
 
  @mixin lineLeft($lineTop) {
-	content: "";
 	position: absolute;
 	top: $lineTop;
 	left: 0px;
@@ -112,3 +111,9 @@ $maxWidth: 1181px;
 	 color: $mainColor;
 	 font-weight: 500;
  }
+ ._lineL {
+	opacity: 0;
+	transform: translate(-100%, 0px);
+	opacity: 0;
+	transition: all 0.8s ease 0s;
+}

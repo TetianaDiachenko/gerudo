@@ -8,9 +8,17 @@
 	}
 	@media (min-width: 992px) {	
 		padding-bottom: 60px;
-		&::before {
+	}
+	._lineR {
+		@media (min-width: 992px) {
 			@include lineRight(119px);
 		}
+	}
+	&._appear {
+		._lineR {
+         transform: translate(0px, 0px);
+         opacity: 1;
+      }
 	}
 	&__container {
 		@include container;

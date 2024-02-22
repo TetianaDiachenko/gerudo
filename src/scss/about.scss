@@ -7,10 +7,18 @@
 		margin-top: 20px;
 	}
 	@media (min-width: 992px) {
-		margin-top: 40px;		
-		&::before {
+		margin-top: 40px;	
+	}
+	._lineR {
+		@media (min-width: 992px) {
 			@include lineRight(119px);
-		}	
+		}
+	}
+	&._appear {
+		._lineR {
+         transform: translate(0px, 0px);
+         opacity: 1;
+      }
 	}
 	&__container {
 		@include container;

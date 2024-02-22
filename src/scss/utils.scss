@@ -96,7 +96,6 @@ $maxWidth: 1181px;
  }
 
  @mixin lineRight($lineTop) {	
-	content: "";
 	position: absolute;
 	top: $lineTop;
 	right: 0px;
@@ -114,6 +113,10 @@ $maxWidth: 1181px;
  ._lineL {
 	opacity: 0;
 	transform: translate(-100%, 0px);
+	transition: all 0.8s ease 0s;
+}
+._lineR {
 	opacity: 0;
+	transform: translate(100%, 0px);
 	transition: all 0.8s ease 0s;
 }

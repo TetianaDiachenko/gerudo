@@ -2,10 +2,16 @@
    background: url("@img/contacts.png") 0 0 no-repeat;
 	background-size: cover;
 	position: relative;
-	@media (min-width: 992px) {
-		&::before {
+	._lineR {
+		@media (min-width: 992px) {
 			@include lineRight(159px);
-		}	
+		}
+	}
+	&._appear {
+		._lineR {
+         transform: translate(0px, 0px);
+         opacity: 1;
+      }
 	}
 	&__container {
 		@include container;

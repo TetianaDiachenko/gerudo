@@ -11,6 +11,17 @@
 			@include lineLeft(119px);
 		}	
 	}
+	._lineL {
+		@media (min-width: 992px) {
+			@include lineLeft(119px);
+		}
+	}
+	&._appear {
+		._lineL {
+         transform: translate(0px, 0px);
+         opacity: 1;
+      }
+	}
 	&__container {
 		@include container;
 	}

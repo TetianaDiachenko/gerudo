@@ -7,7 +7,7 @@
 		margin-top: 20px;
 	}
 	@media (min-width: 992px) {
-		margin-top: 40px;	
+		margin-top: 40px;
 	}
 	._lineR {
 		@media (min-width: 992px) {
@@ -16,9 +16,9 @@
 	}
 	&._appear {
 		._lineR {
-         transform: translate(0px, 0px);
-         opacity: 1;
-      }
+			transform: translate(0px, 0px);
+			opacity: 1;
+		}
 	}
 	&__container {
 		@include container;
@@ -32,12 +32,12 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		@media (min-width: 480px) {	
-			align-items: center;	
+		@media (min-width: 480px) {
+			align-items: center;
 		}
 		@media (min-width: 768px) {
 			margin: 55px 0px 65px;
-			flex-direction: row;		
+			flex-direction: row;
 			align-items: flex-start;
 		}
 		@media (min-width: 992px) {
@@ -46,9 +46,16 @@
 	}
 	&__info-foto {
 		background-color: $whiteColor;
-		@media (min-width: 480px) {	
+		transform: translate(-120px, 0px);
+		opacity: 0;		
+		&._appear {
+			transform: translate(0px, 0px);
+			opacity: 1;
+			transition: all 0.6s ease 0.5s;
+		}
+		@media (min-width: 480px) {
 			flex: 0 0 334px;
-			height: 334px;	
+			height: 334px;
 			overflow: hidden;
 		}
 		img {
@@ -62,7 +69,14 @@
 		background-color: $whiteColor;
 		padding: 20px;
 		margin-top: 30px;
-		@media (min-width: 480px) {	
+		transform: translate(120px, 0px);
+		opacity: 0;
+		&._appear {
+			transform: translate(0px, 0px);
+			opacity: 1;
+			transition: all 0.6s ease 0.5s;
+		}
+		@media (min-width: 480px) {
 			flex: 1 1 auto;
 			padding: 30px 50px 10px;
 		}
@@ -70,9 +84,9 @@
 			padding: 20px 40px 0px;
 			margin-left: 2%;
 			margin-top: 0px;
-		}		
+		}
 		@media (min-width: 992px) {
-			margin-left: 10%;		
+			margin-left: 10%;
 		}
 		p {
 			padding-bottom: 20px;
@@ -91,33 +105,31 @@
 		text-align: center;
 		@media (min-width: 768px) {
 			margin-top: 60px;
-		}		
+		}
 		@media (min-width: 992px) {
 			margin-top: 80px;
-		}	
+		}
 	}
 	&__bottom-button {
 		@include button(60px, 45px, 20px);
 		@media (min-width: 768px) {
 			@include button(85px, 77px, 28px);
-		}		
+		}
 	}
 }
 .certificate {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-		align-items: center;
-		gap: 30px;  
-
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	align-items: center;
+	gap: 30px;
 	&__items {
 		width: 100%;
 		border: 10px solid white;
 		&-link {
 			width: 100%;
 			&-img {
-				width: 100%;				
+				width: 100%;
 			}
 		}
 	}
 }
-

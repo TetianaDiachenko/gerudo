@@ -28,15 +28,9 @@
 	&__container {
 		@include container;
 	}
-
 	&__header {
 		text-align: center;
 	}
-
-	&__header-title {
-		
-	}
-
 	&__if {
 		font-size: 25px;
 		font-weight: 300;
@@ -48,9 +42,8 @@
 		}
 		@media (min-width: 992px) {		
 			padding: 60px 0px 10px ;
-			}
+		}
 	}
-
 	&__descriptions {
 		color: $titleColor;
 		font-size: 18px;
@@ -64,55 +57,9 @@
 		position: relative;
       @media (min-width: 480px) {
          justify-content: space-between;
-			line-height: 1.5;
-			&::before {
-				content: "";
-				display: block;
-				width: 80px;
-				height: 80px;
-				background-color: $mainColor;
-				position: absolute;
-				top: 28%;
-				right: 42%;	
-				@media (min-width: 640px) {
-					width: 104px;
-					height: 104px;
-					top: 25%;	
-				}		
-				@media (min-width: 768px) {
-					top: 28%;
-					right: 44%;	
-				}					
-				@media (min-width: 992px) {
-					top: 41%;
-					right: 62%;	
-				}
-				
-			}
-			&::after {
-				content: "";
-				display: block;
-				width: 80px;
-				height: 80px;
-				background-color: $mainColor;
-				position: absolute;
-				top: 60%;
-				right: 42%;
-				@media (min-width: 640px) {
-					width: 104px;
-					height: 104px;
-				}		
-				@media (min-width: 768px) {
-					right: 44%;	
-				}					
-				@media (min-width: 992px) {
-					top: 41%;
-					right: 28%;	
-				}
-			}
-      }
-	}
-
+			line-height: 1.5;	
+		}
+   }
    &__descriptions-item {
       background-color: #F7F7F7;
       width: 100%;
@@ -134,4 +81,55 @@
       }
    }
 }
-
+._square-one {	
+	transition: all 0.8s ease 0s;
+	&:hover {
+		transform: rotateZ(180deg);
+	}
+	@media (min-width: 480px) {
+		width: 80px;
+		height: 80px;
+		background-color: $mainColor;
+		position: absolute;
+		top: 28%;
+		right: 42%;	
+	}
+	@media (min-width: 640px) {
+		width: 104px;
+		height: 104px;
+		top: 25%;	
+	}		
+	@media (min-width: 768px) {
+		top: 28%;
+		right: 44%;	
+	}					
+	@media (min-width: 992px) {
+		top: 41%;
+		right: 62%;	
+	}
+}
+._square-two {
+	transition: all 0.8s ease 0s;
+	&:hover {
+		transform: rotateZ(180deg);
+	}
+	@media (min-width: 480px) {
+		width: 80px;
+		height: 80px;
+		background-color: $mainColor;
+		position: absolute;
+		top: 60%;
+		right: 42%;
+	}
+	@media (min-width: 640px) {
+		width: 104px;
+		height: 104px;
+	}		
+	@media (min-width: 768px) {
+		right: 44%;	
+	}					
+	@media (min-width: 992px) {
+		top: 41%;
+		right: 28%;	
+	}
+}

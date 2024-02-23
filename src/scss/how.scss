@@ -70,6 +70,13 @@
 		position: relative;    
 		padding: 45px 0px 45px 35px;
 		margin-bottom: 60px;
+		transform: translate(-120px, 0px);
+		opacity: 0;		
+		&._appear {
+			transform: translate(0px, 0px);
+			opacity: 1;
+			transition: all 0.6s ease 0.3s;
+		}
 		&::before {
 			content: url("@img/1.png");
 			position: absolute;
@@ -89,6 +96,13 @@
 	&__content-second {
 		position: relative;    
 		padding: 10px 0px 10px 35px;
+		transform: translate(-120px, 0px);
+		opacity: 0;		
+		&._appear {
+			transform: translate(0px, 0px);
+			opacity: 1;
+			transition: all 0.6s ease 0.4s;
+		}
 		&::before {
 			content: url("@img/2.png");
 			position: absolute;
@@ -109,6 +123,13 @@
 		position: relative; 
 		padding: 25px 0px 25px 35px;
 		margin-bottom: 60px;
+		transform: translate(-120px, 0px);
+		opacity: 0;		
+		&._appear {
+			transform: translate(0px, 0px);
+			opacity: 1;
+			transition: all 0.6s ease 0.5s;
+		}
 		&::before {
 			content: url("@img/3.png");
 			position: absolute;
@@ -120,6 +141,7 @@
 		}
 		@media (min-width: 768px) {
 			padding: 25px 0px 25px 49px;
+			transform: translate(120px, 0px);
 		}
 		@media (min-width: 992px) {  
 			margin-bottom: 140px;
@@ -132,6 +154,13 @@
 	&__content-fourth {
 		position: relative;    
 		padding: 65px 0px 65px 35px;
+		transform: translate(-120px, 0px);
+		opacity: 0;		
+		&._appear {
+			transform: translate(0px, 0px);
+			opacity: 1;
+			transition: all 0.6s ease 0.6s;
+		}
 		&::before {
 			content: url("@img/4.png");
 			position: absolute;
@@ -140,6 +169,7 @@
 		}
 		@media (min-width: 768px) {
 			padding: 65px 70px;
+			transform: translate(120px, 0px);
 		}
 	}
 }

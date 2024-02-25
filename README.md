@@ -1,2 +1,0 @@
-# gerudo
-website business card

@@ -1,6 +1,5 @@
 .contacts {
-   background: url("@img/contacts.png") 0 0 no-repeat;
-	background-size: cover;
+   background: url("@img/contacts.png") 0 0/cover no-repeat;
 	position: relative;
 	._lineR {
 		@media (min-width: 992px) {

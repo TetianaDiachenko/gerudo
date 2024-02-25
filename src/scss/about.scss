@@ -1,6 +1,5 @@
 .about {
-	background: url("@img/aboutme.png") 0 0 no-repeat;
-	background-size: cover;
+	background: url("@img/aboutme.png") 0 0/cover no-repeat;
 	padding-bottom: 80px;
 	position: relative;
 	@media (min-width: 768px) {

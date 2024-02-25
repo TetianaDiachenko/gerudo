@@ -1,6 +1,5 @@
 .footer {
-   background: url("@img/footer.jpg") 0 0 no-repeat #FE8072;
-	background-size: cover;
+   background: url("@img/footer.jpg") 0 0/cover no-repeat #FE8072;
 	color: $whiteColor;
 	&__container {
 		@include container;

@@ -1,6 +1,5 @@
 .gift {
-	background: url("@img/gift.png") 0 0 no-repeat;
-	background-size: cover;
+	background: url("@img/gift.png") 0 0/cover no-repeat;
 	color: $whiteColor;
 	&__container {
 		@include container;

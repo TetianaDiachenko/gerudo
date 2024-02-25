@@ -1,6 +1,5 @@
 .questions {
-   background: url("@img/question.jpg") 0 0 no-repeat  #706969;
-	background-size: cover;
+   background: url("@img/question.jpg") 0 0/cover no-repeat  #706969;
    &__container { 
 		@include container;
 		color: $whiteColor;

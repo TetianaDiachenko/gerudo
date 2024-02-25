@@ -936,7 +936,7 @@ body {
   position: relative;
   padding: 45px 0px 45px 35px;
   margin-bottom: 60px;
-  transform: translate(-120px, 0px);
+  transform: translate(-20%, 0px);
   opacity: 0;
 }
 
@@ -956,7 +956,7 @@ body {
 .how__content-second {
   position: relative;
   padding: 10px 0px 10px 35px;
-  transform: translate(-120px, 0px);
+  transform: translate(-20%, 0px);
   opacity: 0;
 }
 

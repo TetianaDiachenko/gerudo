@@ -27,6 +27,7 @@ import { images } from "./gulp/tasks/images.js";
 import { otfToTtf, ttfToWoff, fontsStyle, iconsFont } from "./gulp/tasks/fonts.js";
 import { svgSprive } from "./gulp/tasks/svgSprive.js";
 import { zip } from "./gulp/tasks/zip.js";
+import { gitHub } from "./gulp/tasks/github.js";
 // import { ftp } from "./gulp/tasks/ftp.js"; // uncomment for ftp
 
 // Watcher for changing in the files
@@ -50,12 +51,14 @@ const mainTasks = gulp.series( fonts, gulp.parallel(copy, html, scss, js, images
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
 const build = gulp.series(reset, mainTasks);
 const deployZIP = gulp.series(reset, mainTasks, zip);
+const deployGitHub = gulp.series(reset, mainTasks, gitHub);
 // const deployFTP = gulp.series(reset, mainTasks, ftp); // uncomment for ftp
 
 //Export scenarios
 export { dev }
 export { build } 
 export { deployZIP }
+export { deployGitHub }
 // export { deployFTP } // uncomment for ftp
 
 // Default scenarios execution

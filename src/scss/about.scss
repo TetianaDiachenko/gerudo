@@ -24,6 +24,11 @@
 	}
 	&__header {
 		text-align: center;
+		&-title {
+			@media (min-width: 768px) {
+				padding: 40px 130px;
+			}
+		}
 	}
 	&__info {
 		margin: 35px 0px 45px;

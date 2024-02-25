@@ -329,12 +329,11 @@ body {
 }
 
 .no-webp .home {
-  background: url("@img/homebg.png") 0 0 no-repeat; }
+  background: url("@img/homebg.png") 0 0/cover no-repeat; }
 
 .home {
   color: #FFFFFF;
   height: 100%;
-  background-size: cover;
   position: relative;
   text-align: center;
 }
@@ -541,10 +540,9 @@ body {
 }
 
 .no-webp .efficiencies {
-  background: url("@img/methods.png") 0 0 no-repeat; }
+  background: url("@img/methods.png") 0 0/cover no-repeat; }
 
 .efficiencies {
-  background-size: cover;
   position: relative;
   padding-bottom: 10px;
 }
@@ -706,10 +704,9 @@ body {
 }
 
 .no-webp .gift {
-  background: url("@img/gift.png") 0 0 no-repeat; }
+  background: url("@img/gift.png") 0 0/cover no-repeat; }
 
 .gift {
-  background-size: cover;
   color: #FFFFFF;
 }
 
@@ -770,10 +767,9 @@ body {
 }
 
 .no-webp .about {
-  background: url("@img/aboutme.png") 0 0 no-repeat; }
+  background: url("@img/aboutme.png") 0 0/cover no-repeat; }
 
 .about {
-  background-size: cover;
   padding-bottom: 80px;
   position: relative;
 }
@@ -896,10 +892,9 @@ body {
 }
 
 .no-webp .how {
-  background: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.5)), url("@img/howIwork.jpg") 0 0 no-repeat; }
+  background: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.5)), url("@img/howIwork.jpg") 0 0/cover no-repeat; }
 
 .how {
-  background-size: cover;
   position: relative;
 }
 
@@ -1020,11 +1015,7 @@ body {
 }
 
 .no-webp .questions {
-  background: url("@img/question.jpg") 0 0 no-repeat #706969; }
-
-.questions {
-  background-size: cover;
-}
+  background: url("@img/question.jpg") 0 0/cover no-repeat #706969; }
 
 .questions__container {
   max-width: 1181px;
@@ -1067,10 +1058,9 @@ body {
 }
 
 .no-webp .contacts {
-  background: url("@img/contacts.png") 0 0 no-repeat; }
+  background: url("@img/contacts.png") 0 0/cover no-repeat; }
 
 .contacts {
-  background-size: cover;
   position: relative;
 }
 
@@ -1103,7 +1093,7 @@ body {
 .contacts__content-tel {
   font-size: 32px;
   font-weight: 700;
-  transform: translate(-120px, 0px);
+  transform: translate(0px, -100%);
   opacity: 0;
 }
 
@@ -1114,16 +1104,15 @@ body {
 .contacts__content-city {
   font-size: 20px;
   font-weight: 700;
-  transform: translate(120px, 0px);
+  transform: translate(0px, 100%);
   padding: 30px 0px 0px;
   opacity: 0;
 }
 
 .no-webp .footer {
-  background: url("@img/footer.jpg") 0 0 no-repeat #FE8072; }
+  background: url("@img/footer.jpg") 0 0/cover no-repeat #FE8072; }
 
 .footer {
-  background-size: cover;
   color: #FFFFFF;
 }
 
@@ -1942,18 +1931,18 @@ main {
   }
 }
 
-.webp .home { background: url(@img/homebg.webp) 0 0 no-repeat; }
+.webp .home { background: url(@img/homebg.webp) 0 0/cover no-repeat; }
 
-.webp .efficiencies { background: url(@img/methods.webp) 0 0 no-repeat; }
+.webp .efficiencies { background: url(@img/methods.webp) 0 0/cover no-repeat; }
 
-.webp .gift { background: url(@img/gift.webp) 0 0 no-repeat; }
+.webp .gift { background: url(@img/gift.webp) 0 0/cover no-repeat; }
 
-.webp .about { background: url(@img/aboutme.webp) 0 0 no-repeat; }
+.webp .about { background: url(@img/aboutme.webp) 0 0/cover no-repeat; }
 
-.webp .how { background: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.5)), url(@img/howIwork.webp) 0 0 no-repeat; }
+.webp .how { background: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.5)), url(@img/howIwork.webp) 0 0/cover no-repeat; }
 
-.webp .questions { background: url(@img/question.webp) 0 0 no-repeat #706969; }
+.webp .questions { background: url(@img/question.webp) 0 0/cover no-repeat #706969; }
 
-.webp .contacts { background: url(@img/contacts.webp) 0 0 no-repeat; }
+.webp .contacts { background: url(@img/contacts.webp) 0 0/cover no-repeat; }
 
-.webp .footer { background: url(@img/footer.webp) 0 0 no-repeat #FE8072; }
+.webp .footer { background: url(@img/footer.webp) 0 0/cover no-repeat #FE8072; }

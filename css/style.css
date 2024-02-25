@@ -149,7 +149,7 @@ body {
 
 ._lineR {
   opacity: 0;
-  transform: translate(100%, 0px);
+  transform: translate(-60%, 0px);
   transition: all 0.8s ease 0s;
 }
 
@@ -1496,6 +1496,10 @@ main {
 
   .about {
     margin-top: 20px;
+  }
+
+  .about__header-title {
+    padding: 40px 130px;
   }
 
   .about__info {

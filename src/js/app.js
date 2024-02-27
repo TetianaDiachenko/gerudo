@@ -12,7 +12,7 @@ if (iconMenu) {
 	});
 }
 
-//Scrolled
+//Changed header when scrolling
 const header = document.querySelector('.header');
 document.addEventListener('scroll', () => {
 	if(window.scrollY > 0) {
@@ -22,52 +22,32 @@ document.addEventListener('scroll', () => {
 	}
 })
 
-//Scroll on click
-const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
-if(menuLinks.length > 0) {
-	menuLinks.forEach(menuLink => {
-		menuLink.addEventListener("click", onMenuLinkClick);
-	});
-	function onMenuLinkClick(e) {
-		const menuLink = e.target;
-		if(menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
-			const gotoBlock = document.querySelector(menuLink.dataset.goto);
-			const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY - header.offsetHeight;
+// Scroll to selected section
+function onLinkClick(e) {
+	const link = e.target;
+	if(link.dataset.goto && document.querySelector(link.dataset.goto)) {
+		const gotoBlock = document.querySelector(link.dataset.goto);
+		const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY - header.offsetHeight;
 
-			if(iconMenu.classList.contains('_active')) {
-				document.body.classList.remove('_lock');
-				iconMenu.classList.remove('_active');
-				menuBody.classList.remove('_active');
-			}
+		if(iconMenu.classList.contains('_active')) {
+			document.body.classList.remove('_lock');
+			iconMenu.classList.remove('_active');
+			menuBody.classList.remove('_active');
+		}
 
-			window.scrollTo({
-				top: gotoBlockValue,
-				behavior: "smooth"
-			});
-			e.preventDefault();
-		}	
-	}
+		window.scrollTo({
+			top: gotoBlockValue,
+			behavior: "smooth"
+		});
+		e.preventDefault();
+	}	
 }
-
-//Scroll on click button 
-const buttonLinks = document.querySelectorAll('.button[data-goto]');
-if(buttonLinks.length > 0) {
-	buttonLinks.forEach(buttonLink => {
-		buttonLink.addEventListener("click", onButtonClick);
+//Scroll on click scrollebleLinks
+const scrollebleLinks = document.querySelectorAll('a[data-goto]');
+if(scrollebleLinks.length > 0) {
+	scrollebleLinks.forEach(scrollebleLink => {
+		scrollebleLink.addEventListener("click", onLinkClick);
 	});
-	function onButtonClick(e) {
-		const buttonLink = e.target;
-		if(buttonLink.dataset.goto && document.querySelector(buttonLink.dataset.goto)) {
-			const gotoBlock = document.querySelector(buttonLink.dataset.goto);
-			const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY - header.offsetHeight;
-
-			window.scrollTo({
-				top: gotoBlockValue,
-				behavior: "smooth"
-			});
-			e.preventDefault();
-		}	
-	}
 }
 
 //Animated 

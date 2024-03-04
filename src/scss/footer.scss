@@ -24,14 +24,10 @@
 	}
 	&__list {
 		display: flex;
-		flex-direction: column;
+		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-		gap: 0px;
-		@media (min-width: 480px) {
-			flex-direction: row;
-			gap: 30px;
-		}
+		gap: 0px 20px;
 		@media (min-width: 768px) {
 			flex-direction: column;
 			gap: 0px;
